@@ -56,7 +56,7 @@ const Testimonial = () => {
         <h3 className="text-customgreen text-xl font-semibold">Testimonial</h3>
         <h1 className="text-4xl font-semibold">Our Successful Students</h1>
       </div>
-
+{/* 
       <Carousel
         arrows={false}
         autoPlay={true}
@@ -77,7 +77,7 @@ const Testimonial = () => {
             <p className="mt-5 text-white  text-left ml-6">{val.para}</p>
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };
