@@ -60,7 +60,7 @@ const responsive = {
         </h1>
       </div>
 
-      <Carousel
+      {/* <Carousel
         arrows={false}
         autoPlay={true}
         autoPlaySpeed={1500}
@@ -82,7 +82,7 @@ const responsive = {
             </div>
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };
