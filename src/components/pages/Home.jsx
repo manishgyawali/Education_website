@@ -12,14 +12,14 @@ const Home = () => {
   
   return (
     <div className="">
-      <Homebanner />
-      <div className="w- mt-96  pt-20 mx-auto">
-        <LearningOnline />
-        <CourseSlider/>
-      </div>
+       {/* <Homebanner />
+       <div className="w- mt-96  pt-20 mx-auto">
+         <LearningOnline />
+         <CourseSlider/>
+       </div> */}
     
-        <Testimonial />
-      <div className="w-11/12 mt-40 pt-20 grid gap-14 mx-auto">
+         <Testimonial />
+      <div className="w-11/12  pt-20 grid gap-14 mx-auto">
         <AllCourse />
         <Pricing />
         <Blog />

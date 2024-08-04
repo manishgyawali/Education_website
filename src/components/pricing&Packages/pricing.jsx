@@ -9,7 +9,7 @@ const Pricing = () => {
     </div>
 
 
-    <div className=" flex  border gap-4 ">
+    <div className=" grid md:grid-cols-2 lg:grid-cols-4 border gap-4 ">
     {pricePackagedata.map((val, i) => (
           <div className="bg-white shadow-lg py-9 px-4 group ">
             <h1 key={i} className="text-sm font-medium text-black mt-6  ">{val.pname}</h1>

@@ -30,10 +30,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <div className="">
+      <div className="pt-6">
         <Newsletter />
       </div>
-      <div className="w-10/12 mt-60  grid gap-14 mx-auto">
+      <div className="w-10/12 py-10   grid gap-14 mx-auto">
         <Footer />
       </div>
       <Footerlast />

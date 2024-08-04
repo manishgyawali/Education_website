@@ -12,7 +12,7 @@ const Blog = () => {
         <h1 className="text-4xl font-semibold">Recent From Blog</h1>
       </div>
 
-      <div className=" grid grid-cols-3  border gap-6     ">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-3  border gap-6     ">
         {blogData.map((val, i) => (
           <div className="bg-white group shadow-lg pb-6 flex flex-col gap-6  ">
             <div className="h-72 w-full overflow-clip bg-gray-300">

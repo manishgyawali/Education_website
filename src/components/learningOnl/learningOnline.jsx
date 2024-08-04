@@ -1,7 +1,6 @@
 import React from "react";
 import { onlineLearnData } from "../../../onlineLearning";
 import Learningbg from "../../assets/learning.jpg";
-// import learningicon from "../../assets/online-learning.png"
 
 const LearningOnline = () => {
   return (

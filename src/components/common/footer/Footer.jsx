@@ -33,8 +33,8 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-5 gap-3  pb-20">
-      <div>
+    <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 lg:gap-3  ">
+      <div className="col-span-2 md:col-span-3 lg:col-span-2">
         <h1 className="font-bold text-2xl ">ACADEMIA</h1>
         <h3 className="text-sm text-customgreen font-medium">
           ONLINE EDUCATION & LEARNING
@@ -94,7 +94,7 @@ const Footer = () => {
         <h2 className="font-semibold text-lg">Recent Posts</h2>
       </div>
 
-      <div>
+      <div className="col-span-2">
         <h2 className="font-semibold text-lg">Have a Questions?</h2>
         <div className="mt-9">
           

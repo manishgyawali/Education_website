@@ -8,12 +8,12 @@ import { FaInstagram } from "react-icons/fa";
 const Head = () => {
   return (
     <div>
-      <div className="flex justify-between items-center w-10/12 mx-auto  text-white py-4">
+      <div className="hidden md:flex justify-between items-center w-11/12 mx-auto text-white py-4">
         <div>
-          <h1 className="font-bold text-3xl cursor-pointer hover:text-customgreen duration-500 ">
+          <h1 className="md:font-bold text-2xl cursor-pointer hover:text-customgreen duration-500 ">
             ACADEMIA
           </h1>
-          <h3 className="text-sm font-medium cursor-pointer">
+          <h3 className="md:text-xs font-medium cursor-pointer">
             ONLINE EDUCATION & LEARNING
           </h3>
         </div>

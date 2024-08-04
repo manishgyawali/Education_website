@@ -8,10 +8,10 @@ const AllCourse = () => {
         <h1 className="text-4xl font-semibold">Browse Our Online Courses</h1>
       </div>
 
-      <div className="grid grid-cols-6 border gap-2   ">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 border gap-2   ">
         {coursecard.map((val, i) => (
-          <div className="bg-white hover:bg-customgreen cursor-pointer group flex py-8 px-6 flex-col gap-5 items-center justify-center  duration-500 shadow-md ">
-            <div className="h-16 w-16 bg-mainbg">
+          <div className="bg-white hover:bg-customgreen cursor-pointer group flex py-4  md:py-8 px-6 flex-col gap-5 items-center justify-center  duration-500 shadow-md ">
+            <div className=" md:h-16 w-16 bg-mainbg">
               <img src={val.image} alt="image" />
             </div>
             <h1 key={i} className="text-md group-hover:text-white font-semibold text-black ">{val.coursename}</h1>

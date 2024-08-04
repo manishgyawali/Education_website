@@ -67,7 +67,7 @@ const Testimonial = () => {
       >
         {testimonialData.map((val, i) => (
           <div key={i} className="bg-customgreen p-5 mx-4  ">
-            <div className="flex gap-7  ">
+            <div key={i} className="flex gap-7  ">
               <img src={val.image} alt="image"  className="h-20 w-20  rounded-full  object-cover"/>
               <div className="flex flex-col h-fit ">
                 <h1 className="text-white text-2xl font-semibold">{val.Name}</h1>
