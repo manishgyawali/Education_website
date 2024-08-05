@@ -4,7 +4,7 @@ import Learningbg from "../../assets/learning.jpg";
 
 const LearningOnline = () => {
   return (
-    <div className="grid grid-cols-2  h-fit justify-between w-11/12  mx-auto gap-10 ">
+    <div className="grid lg:grid-cols-2  h-fit justify-between w-11/12  mx-auto gap-10 ">
       <div className="h-full w-full ">
         <img src={Learningbg } className="h-full  w-full object-cover" alt="learningphoto" />
       </div>
