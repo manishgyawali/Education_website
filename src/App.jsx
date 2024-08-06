@@ -12,6 +12,8 @@ import Newsletter from "./components/newsletter/Newsletter";
 import Contact from "./components/pages/Contact";
 import Pricing from "./components/pages/Pricing";
 import Journal from "./components/pages/Journal";
+import Nav2 from "./components/common/header/nav2";
+import State from "./components/pages/State";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Head />
         <Header />
       </div>
+      <Nav2/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/allcourse" element={<Allcourse />} />
@@ -28,6 +31,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/journal" element={<Journal />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/state" element={<State/>}/>
       </Routes>
 
       <div className="pt-6">

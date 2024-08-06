@@ -1,6 +1,6 @@
 import React from "react";
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { LuComputer } from "react-icons/lu";
 
 const CourseSlider = () => {
@@ -35,25 +35,25 @@ const CourseSlider = () => {
 ]
 
 
-// const responsive = {
-//   superLargeDesktop: {
+const responsive = {
+  superLargeDesktop: {
 
-//     breakpoint: { max: 4000, min: 3000 },
-//     items: 5
-//   },
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 3
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 464 },
-//     items: 2
-//   },
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1
-//   }
-// };
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
   return (
     <div className="w-11/12 mx-auto text-center h-fit grid gap-10 mt-40 ">
       <div>
@@ -63,7 +63,7 @@ const CourseSlider = () => {
         </h1>
       </div>
 
-      {/* <Carousel
+      <Carousel
         arrows={false}
         autoPlay={true}
         autoPlaySpeed={1500}
@@ -78,7 +78,7 @@ const CourseSlider = () => {
                 <h1 key={i} className="text-5xl items-center flex justify-center bg-customgreen text-white w-20 h-20 rounded-full">{val.logo}</h1>
 
                 </div>
-                <div className="text-left ">
+                <div className="text-left grid gap-2 ">
                 <h1 key={i} className="text-2xl font-semibold">{val.heading}</h1>
                 <h1 key={i}>{val.rating}</h1>
                 <h3 key={i} className="text-gray-400">{val.by}</h3>
@@ -87,13 +87,13 @@ const CourseSlider = () => {
 
                 </div>
             </div>
-            <div className="mt-6 ">
-              <h1 key={i} className="bg-gray-100 py-3 w-10/12 ml-7  text-md text-customgreen">{val.money}</h1>
-              <button key={i} className="  bg-customgreen  text-white py-3 px-20 mt-2 text-md rounded ">{val.button}</button>
+            <div className="mt-6 grid  items-center justify-center ">
+              <h1 key={i} className="bg-gray-100 py-3 px-20  text-md text-customgreen rounded">{val.money}</h1>
+              <button key={i} className="  bg-customgreen  text-white py-3  mt-2 text-md rounded ">{val.button}</button>
             </div>
           </div>
         ))}
-      </Carousel> */}
+      </Carousel>
     </div>
   );
 };

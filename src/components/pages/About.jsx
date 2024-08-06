@@ -8,7 +8,7 @@ const About = () => {
     <div className="">
       <Banner title={"About us"} />
 
-      <div className="mt-96 pt-28">
+      <div className="mt-60 pt-28">
         <LearningOnline/>
         <Testimonial/>
       </div>

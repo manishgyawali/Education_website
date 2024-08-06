@@ -5,8 +5,8 @@ import Blog from '../Blog/Blog';
 const Journal = () => {
   return (
     <div>
-     < Banner/>
-    <div className='mt-96 pt-40'>
+     < Banner title={"Journal"}/>
+    <div className='mt-52 pt-40'>
     <Blog/>
     </div>
     </div>

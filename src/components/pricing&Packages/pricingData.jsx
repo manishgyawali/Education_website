@@ -1,6 +1,6 @@
 import React from "react";
-import { pricePackagedata } from "../../../pricing";
-const Pricing = () => {
+import { pricePackagedata } from "../../../pricingItems";
+const PricingData = () => {
   return (
     <div className="text-center grid gap-10">
     <div className="  ">
@@ -26,4 +26,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default PricingData;

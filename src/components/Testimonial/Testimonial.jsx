@@ -1,6 +1,6 @@
 import React from "react";
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Testimonial = () => {
   const testimonialData = [
@@ -31,24 +31,24 @@ const Testimonial = () => {
     },
   ];
 
-  // const responsive = {
-  //   superLargeDesktop: {
-  //     breakpoint: { max: 4000, min: 3000 },
-  //     items: 5,
-  //   },
-  //   desktop: {
-  //     breakpoint: { max: 3000, min: 1024 },
-  //     items: 3,
-  //   },
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 464 },
-  //     items: 2,
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 464, min: 0 },
-  //     items: 1,
-  //   },
-  // };
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <div className="w-11/12 mx-auto text-center h-fit grid gap-10 mt-40 ">
@@ -56,7 +56,7 @@ const Testimonial = () => {
         <h3 className="text-customgreen text-xl font-semibold">Testimonial</h3>
         <h1 className="text-4xl font-semibold">Our Successful Students</h1>
       </div>
-{/* 
+
       <Carousel
         arrows={false}
         autoPlay={true}
@@ -66,7 +66,7 @@ const Testimonial = () => {
       
       >
         {testimonialData.map((val, i) => (
-          <div key={i} className="bg-customgreen p-5 mx-4  ">
+          <div key={i} className="bg-customgreen px-10 py-14 mx-5 rounded ">
             <div key={i} className="flex gap-7  ">
               <img src={val.image} alt="image"  className="h-20 w-20  rounded-full  object-cover"/>
               <div className="flex flex-col h-fit ">
@@ -77,7 +77,7 @@ const Testimonial = () => {
             <p className="mt-5 text-white  text-left ml-6">{val.para}</p>
           </div>
         ))}
-      </Carousel> */}
+      </Carousel>
     </div>
   );
 };

@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <div>
       <div>
-        <Banner />
+        <Banner title={"Contact"} />
       </div>
 
-      <div className=" mt-96 py-40 flex w-10/12 mx-auto gap-10 items-center justify-center">
+      <div className=" mt-60 py-40 flex w-10/12 mx-auto gap-10 items-center justify-center">
         <div className="  ">
           <img src={ContactImg} alt="image" />
         </div>
@@ -20,7 +20,7 @@ const Contact = () => {
               We're open for any suggestion or just to have a chat
             </p>
           </div>
-          <div className="grid grid-cols-3 mt-7">
+          <div className="grid md:grid-cols-3 mt-10 gap-5">
             <div>
               <h2 className="font-bold text-sm">ADDRESS:</h2>
               <h3 className="  mt-3 w-9/12">
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <div className="mt-12">
             <h1 className="text-xl">Follow us here</h1>
-            <div className="text-customgreen font-semibold text-sm flex gap-10 mt-3">
+            <div className="text-customgreen font-semibold text-sm flex gap-4 md:gap-10 mt-3">
               <h3>FACEBOOK</h3>
               <h3>TWITTER</h3>
               <h3>INSTAGRAM</h3>

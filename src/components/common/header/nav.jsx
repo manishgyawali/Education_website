@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <div
-      className={`flex justify-between fixed  left-0 right-0  transition-all duration-1000 delay-75 ease-in-out
+      className={`hidden lg:flex justify-between fixed  left-0 right-0  transition-all duration-1000 delay-75 ease-in-out
     ${
       Fix
         ? " text-black top-0 shadow-lg translate-y-0  bg-opacity-100 "
@@ -34,8 +34,8 @@ const Header = () => {
     }
      bg-white  pl-4 h-20  w-11/12 mx-auto`}
     >
-      <div className="flex justify-center items-center">
-        <ul className="flex gap-12 cursor-pointer ">
+      <div className="flex justify-center items-center  ">
+        <ul className=" flex gap-12 cursor-pointer ">
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/allcourse"} className="cursor-pointer">
             All Courses

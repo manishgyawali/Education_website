@@ -3,9 +3,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import Background from "../../assets/homebanner.png";
 const Homebanner = () => {
   return (
-    <div className=" bg-bgmain h-100 text-white absolute w-full top-0">
-      <div className="flex justify-center  w-10/12 mx-auto h-full  ">
-          <div className="  pt-28 flex justify-center flex-col gap-9">
+    <div className="  bg-bgmain h-fit lg:h-100 text-white relative md:absolute w-full top-0">
+      <div className="flex flex-col lg:flex-row justify-center   w-10/12 mx-auto h-full  ">
+          <div className="  pt-28 relative z-10 flex justify-center flex-col gap-9">
             <div>
               <h3 className="font-medium">WELCOME TO ACADEMIA</h3>
               <h1 className="font-bold text-4xl mt-2">
@@ -28,7 +28,7 @@ const Homebanner = () => {
           </div>
           </div>
         <div
-          className="h-full bg-cover  w-full"
+          className=" md:h-100  lg:h-full  bg-cover h-96 top-0 left-0 right-0  w-full"
           style={{
             backgroundImage: `url(${Background})`,
           }}
