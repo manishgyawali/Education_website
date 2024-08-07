@@ -22,7 +22,7 @@ const Homebanner = () => {
               GET STARTED NOW! <FaArrowRight className="text-sm" />
             </button>
 
-            <button className="bg-white flex h-fit items-center gap-1 text-customgreen px-3 py-3 font-medium rounded">
+            <button className="bg-white flex h-fit items-center gap-1 text-customgreen px-3 py-2 font-medium rounded">
               VIEW COURSE <FaArrowRight className="text-sm" />
             </button>
           </div>

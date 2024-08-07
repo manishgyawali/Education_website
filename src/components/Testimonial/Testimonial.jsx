@@ -51,7 +51,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto text-center h-fit grid gap-10 mt-40 ">
+    <div className="lg:w-9/12 w-11/12 mx-auto text-center h-fit grid gap-10 mt-20 md:mt-20 ">
       <div>
         <h3 className="text-customgreen text-xl font-semibold">Testimonial</h3>
         <h1 className="text-4xl font-semibold">Our Successful Students</h1>
@@ -66,7 +66,7 @@ const Testimonial = () => {
       
       >
         {testimonialData.map((val, i) => (
-          <div key={i} className="bg-customgreen px-10 py-14 mx-5 rounded ">
+          <div key={i} className="bg-customgreen lg:px-10 lg:py-10 px-8 py-7 mx-5 rounded ">
             <div key={i} className="flex gap-7  ">
               <img src={val.image} alt="image"  className="h-20 w-20  rounded-full  object-cover"/>
               <div className="flex flex-col h-fit ">

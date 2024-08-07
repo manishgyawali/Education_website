@@ -6,22 +6,38 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
 import { AiFillFlag } from "react-icons/ai";
+import { MdOutlineDateRange } from "react-icons/md";
+import { IoPersonSharp } from "react-icons/io5";
+
+
 const Footer = () => {
   const footerData = [
     {
       explore: "About Us",
       quickLinks: "Contact Us",
       questions: "203 Fake St. Mountain View, San Francisco, California, USA",
+      rPimg: "image",
+      rPdate: "Jan 18, 2021",
+      rPadmin: "Admin",
+      rPtitle: "Creativity and Inspiration",
     },
     {
       explore: "Services",
       quickLinks: "Pricing",
       questions: "	+2 392 3929 210",
+      rPimg: "image",
+      rPdate: "Jan 18, 2021",
+      rPadmin: "Admin",
+      rPtitle: "Creativity and Inspiration",
     },
     {
       explore: "Courses",
       quickLinks: "Terms & Conditions",
       questions: "",
+      rPimg: "image",
+      rPdate: "Jan 18, 2021",
+      rPadmin: "Admin",
+      rPtitle: "Creativity and Inspiration",
     },
     {
       explore: "Blog",
@@ -39,7 +55,7 @@ const Footer = () => {
         <h3 className="text-sm text-customgreen font-medium">
           ONLINE EDUCATION & LEARNING
         </h3>
-        <p className="mt-9 text-ftpara">
+        <p className="mt-9 text-ftpara w-8/12">
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia
         </p>
@@ -92,12 +108,49 @@ const Footer = () => {
 
       <div>
         <h2 className="font-semibold text-lg">Recent Posts</h2>
+        <div className="mt-9">
+          {footerData.map((val, i) => {
+            return (
+              <div key={i} className="flex gap-10 items-center ">
+                <div>
+                  <h1 key={i}>{val.rPimg}</h1>
+                </div>
+                <div className="grid gap-2">
+                  <div className="flex gap-5">
+                    <div className="flex gap-2 items-center">
+                      <MdOutlineDateRange className="text-customgreen text-xl " />
+                      <h1
+                        key={i}
+                        className="text-customgreen font-semibold text-sm  "
+                      >
+                        {val.rPdate}
+                      </h1>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                      <IoPersonSharp className="text-customgreen " />
+                      <h1
+                        key={i}
+                        className="text-customgreen font-semibold text-sm"
+                      >
+                        {val.rPadmin}
+                      </h1>
+                    </div>
+                  </div>
+                  <div className="">
+                    <h1 key={i} className="">
+                      {val.rPtitle}
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <div className="col-span-2">
         <h2 className="font-semibold text-lg">Have a Questions?</h2>
         <div className="mt-9">
-          
           <div className="flex items-center gap-8 ">
             <AiFillFlag className="text-customgreen text-5xl" />
             <h4> 203 Fake St. Mountain View, San Francisco, California, USA</h4>
@@ -110,7 +163,6 @@ const Footer = () => {
             <FaTelegramPlane className="text-customgreen text-xl" />
             <h4> info@yourdomain.com</h4>
           </div>
-          
         </div>
       </div>
     </div>

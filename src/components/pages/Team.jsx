@@ -4,7 +4,7 @@ import { teamData } from "./../../team";
 
 const Team = () => {
   return (
-    <div className="py-40 mt-44 lg:mt-80">
+    <div className="py-36 mt-44 md:mt-20 lg:mt-80">
       <Banner title={"Our Team"} />
       <div className="bg-white mt-14  w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 shadow-md">
         {teamData.map((val, i) => {

@@ -8,9 +8,9 @@ const Pricing = () => {
   return (
     <div className='mt-52 py-40 '>
      <div>
-     <Banner title={"Pricing"} />
+     <Banner title={"Choose The Right Plan"} />
     
-    <div className=''>
+    <div className='lg:mt-40'>
     <PricingData />
     </div>
      </div>

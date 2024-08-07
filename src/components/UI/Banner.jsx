@@ -11,7 +11,7 @@ const Banner = ({ title }) => {
             backgroundImage: `url(${Background})`,
           }}
         >
-          <div className="absolute  top-0 left-0 right-0 bottom-0 w-full h-full flex items-center justify-center z-10 text-4xl font-semibold ">
+          <div className="absolute  top-0 left-0 right-0 bottom-0 w-full h-full flex items-center justify-center z-10 text-6xl font-semibold ">
             {title ? title : "no title"}
           </div>
         </div>

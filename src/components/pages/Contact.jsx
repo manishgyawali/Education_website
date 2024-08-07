@@ -5,13 +5,13 @@ const Contact = () => {
   return (
     <div>
       <div>
-        <Banner title={"Contact"} />
+        <Banner title={"Contact Us"} />
       </div>
 
-      <div className=" mt-60 py-40 flex w-10/12 mx-auto gap-10 items-center justify-center">
-        <div className="  ">
+      <div className=" mt-60 md:mt-40 lg:mt-96 py-40 flex w-10/12 mx-auto gap-10 items-center justify-center">
+        {/* <div className="  ">
           <img src={ContactImg} alt="image" />
-        </div>
+        </div> */}
 
         <div className=" border border-white p-10 bg-white">
           <div>

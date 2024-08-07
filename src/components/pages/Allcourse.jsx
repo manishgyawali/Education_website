@@ -7,10 +7,10 @@ const Allcourse = () => {
   return (
     <div >
  <div>
- <Banner title={"All Course"}  />
+ <Banner title={"Explore Courses"}  />
  </div>
 
-<div className='mt-52'>
+<div className='mt-52 md:mt-80 lg:mt-[35rem]'>
 <CourseSlider/>
 
 </div>

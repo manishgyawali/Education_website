@@ -55,7 +55,7 @@ const responsive = {
   }
 };
   return (
-    <div className="w-11/12 mx-auto text-center h-fit grid gap-10 mt-40 ">
+    <div className="lg:w-9/12 w-11/12 mx-auto text-center h-fit grid gap-10 mt-40 ">
       <div>
         <h3 className="text-customgreen text-xl font-semibold">Our Courses</h3>
         <h1 className="text-4xl font-semibold">

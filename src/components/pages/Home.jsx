@@ -4,7 +4,6 @@ import LearningOnline from "../learningOnl/learningOnline";
 import AllCourse from "../AllCourses/AllCourse";
 import Pricing from "../pricing&Packages/pricingData";
 import Blog from "../Blog/Blog";
-import HBanner from "../horizontalbanner/hBanner";
 import Testimonial from "../Testimonial/Testimonial";
 import CourseSlider from "../OnlinercourseSlider/CourseSlider";
 

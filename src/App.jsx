@@ -37,7 +37,7 @@ function App() {
       <div className="pt-6">
         <Newsletter />
       </div>
-      <div className="w-10/12 py-10   grid gap-14 mx-auto">
+      <div className="w-11/12 py-10 grid gap-14 mx-auto">
         <Footer />
       </div>
       <Footerlast />
