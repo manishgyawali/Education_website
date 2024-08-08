@@ -14,6 +14,8 @@ import Pricing from "./components/pages/Pricing";
 import Journal from "./components/pages/Journal";
 import Nav2 from "./components/common/header/nav2";
 import State from "./components/pages/State";
+import Slider from "./components/pages/Slider";
+import Viewmore from "./components/pages/Viewmore";
 
 function App() {
   return (
@@ -32,7 +34,13 @@ function App() {
         <Route path="/journal" element={<Journal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/state" element={<State/>}/>
+        <Route path="/slider" element={<Slider/>}/>
+        <Route path="/viewmore" element={<Viewmore/>}/>
+
+
+
       </Routes>
+      
 
       <div className="pt-6">
         <Newsletter />
