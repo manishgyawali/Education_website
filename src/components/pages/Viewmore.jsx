@@ -111,6 +111,8 @@ const Viewmore = () => {
           data.push(i)
         }
 
+
+        
         return (
           <div className=" p-5 bg-gray-300 grid  gap-5  ">
             <div className={`flex ${view=='grid'?"flex-col ":"flex-row "}  gap-10`}>
