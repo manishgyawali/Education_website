@@ -18,7 +18,7 @@ const Viewmore = () => {
       price: "Rs 20,000",
       description:
         "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard ",
-      rating: 5,
+      rating: 1,
     },
     {
       image: images1,
@@ -54,7 +54,7 @@ const Viewmore = () => {
       description:
         "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard ",
 
-        rating: 5,
+        rating: 1,
       },
     {
       image: images2,
@@ -110,9 +110,6 @@ const Viewmore = () => {
         for(let i=0;i<val.rating;i++){
           data.push(i)
         }
-
-
-        
         return (
           <div className=" p-5 bg-gray-300 grid  gap-5  ">
             <div className={`flex ${view=='grid'?"flex-col ":"flex-row "}  gap-10`}>
@@ -120,22 +117,23 @@ const Viewmore = () => {
               <div className=" font-semibold">
                 <h1 key={i}>{val.name}</h1>
                 <p key={i}>{val.description}</p>
+                {data}
+                <div className="flex ">
                 {
                   data.map((item,ibn)=>{
                     return( 
-                    <div className="flex">
                         <IoStarSharp  />
-                    </div>
-                    )
-                  })
-                }
+                      )
+                    })
+                  }
+                  </div> 
                 <h1 key={i}>{data}</h1>
             <h1 key={i}>{val.price}</h1>
               </div>
 
               {
                 view!='grid'?<div>
-                  kisan
+                 
                 </div>:null
               }
             </div>
@@ -148,7 +146,7 @@ const Viewmore = () => {
           onClick={() => {
             setindex(imageData.length - 1);
           }}
-          className="px-4 py-2 bg-cyan-300 text-white"
+          className="px-4 py-2 bg-cyan-300 text-white rounded"
         >
           Viewmore
         </button>

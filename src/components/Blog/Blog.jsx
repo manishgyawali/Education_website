@@ -1,56 +1,48 @@
- import React from "react";
-import { blogData } from "../../../blog";
-import { IoPerson } from "react-icons/io5";
-import { MdDateRange } from "react-icons/md";
-import { FaComment } from "react-icons/fa";
-import Homelog from '../../assets/homebanner.jpg'
-const Blog = () => {
+import React, { useState } from "react";
+
+import { IoGrid } from "react-icons/io5";
+import { MdOutlineFormatLineSpacing } from "react-icons/md";
+import { blogData } from "../Data/Blogdata";
+import Blogdesign from "../UI/Blogdesign";
+const Blog = ({ lastindex,isJournalPage }) => {
+  const [index, setindex] = useState(3);
+  const [view, setview] = useState('grid');
   return (
-    <div className="text-center grid gap-10 w-11/12 mx-auto">
+    <div className="text-center grid gap-10 w-11/12 mx-auto mt-60">
       <div className="  ">
         <h3 className="text-customgreen text-xl font-semibold">OUR BLOG</h3>
         <h1 className="text-4xl font-semibold">Recent From Blog</h1>
+       
+ { isJournalPage &&    <div className="flex justify-end gap-5 items-center">
+        <IoGrid
+          onClick={() => {
+            setview("grid");  
+          }}
+          className="text-2xl"
+        />
+        <MdOutlineFormatLineSpacing
+          onClick={() => {
+            setview("flex");
+          }}
+          className="text-3xl"
+        />
+      </div>}
       </div>
 
       <div className=" grid md:grid-cols-2 lg:grid-cols-3  border gap-6     ">
-        {blogData.map((val, i) => (
-          <div className="bg-white group shadow-lg pb-6 flex flex-col gap-6  ">
-            <div className="h-72 w-full overflow-clip bg-gray-300">
-              <img src={val.image} className="h-full group-hover:scale-125 transition-all duration-1000 delay-100 ease-in-out object-left-top w-full object-cover" />
-            </div>
-            <div className="flex gap-2 items-center w-10/12 mx-auto justify-between ">
-              <div className="flex items-center gap-3 ">
-                <IoPerson className="text-customgreen"/>
-                <h4 key={i} className="text-xs font-bold text-ftpara">
-                  {val.admin}
-                </h4>
-              </div>
-
-              <div className="flex items-center gap-3 ">
-                <MdDateRange className="text-customgreen" />
-                <h4 key={i} className="text-xs font-bold text-ftpara">
-                  {val.date}
-                </h4>
-              </div>
-
-              <div className="flex items-center gap-3 ">
-                <FaComment className="text-customgreen" />{" "}
-                <h4 key={i} className="text-customgreen flex text-xs font-bold text-ftpara">
-                  {val.comments}
-                </h4>
-              </div>
-            </div>
-
-            <div className="w-10/12 mx-auto">
-              <h2 key={i} className="text-left group-hover:text-customgreen font-semibold text-2xl">
-                {val.heading}
-              </h2>
-              <p key={i} className="text-ftpara text-left mt-6">
-                {val.parag}
-              </p>
-            </div>
-          </div>
+        {blogData.slice(0, lastindex).map((val, i) => (
+          <Blogdesign key={i} val={val} />
         ))}
+      </div>
+      <div className="flex gap-8  items-center ">
+        <button
+          onClick={() => {
+            setindex(imageData.length - 1);
+          }}
+          className="px-4 py-2 bg-customgreen text-white"
+        >
+          Viewmore
+        </button>
       </div>
     </div>
   );

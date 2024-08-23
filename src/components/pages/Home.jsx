@@ -21,7 +21,7 @@ const Home = () => {
       <div className="w-11/12  pt-20 grid gap-14 mx-auto">
         <AllCourse />
         <Pricing />
-        <Blog />
+        <Blog lastindex={3} />
       </div>
     
     </div>

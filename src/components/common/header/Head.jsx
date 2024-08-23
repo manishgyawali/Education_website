@@ -38,10 +38,10 @@ const Head = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 cursor-pointer  ">
-          <FaFacebookF className="border rounded-full text-xl  text-bgmain bg-white bg-opacity-70 h-10 w-10 p-2 group-hover:bg-customgreen text-white duration-100 " />
-          <CiTwitter className="border rounded-full text-xl  text-bgmain bg-white bg-opacity-70 h-10 w-10 p-2 group-hover:bg-customgreen text-white duration-100" />
-          <FaInstagram className="border rounded-full text-xl  text-bgmain bg-white bg-opacity-70 h-10 w-10 p-2 group-hover:bg-customgreen text-white duration-100" />
+        <div className="flex gap-4 cursor-pointer   ">
+          <FaFacebookF className="border rounded-full text-xl  text-customgreen bg-white bg-opacity-80 h-10 w-10 p-2  " />
+          <CiTwitter className="border rounded-full text-xl  text-customgreen bg-white bg-opacity-80 h-10 w-10 p-2 " />
+          <FaInstagram className="border rounded-full text-xl  text-customgreen bg-white bg-opacity-80 h-10 w-10 p-2 " />
         </div>
       </div>
     </div>
